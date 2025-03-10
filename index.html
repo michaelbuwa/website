@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab1 </title>
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d4/One_Ring_Blender_Render.png">
+
+        <style>
+            body {background-color: powderblue;}
+            pre {text-align: center;}
+            h1 {text-align: center;}
+            table, th, td {border:1px solid black;}
+        </style>
+        <script>
+            function handleSubmit(event) {
+                event.preventDefault(); // Prevent form submission
+    
+                // Get the values from the form
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+    
+                // Display the values in the result div
+                document.getElementById('result').innerHTML = `
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                `;
+            }
+        </script>
+    </head>
+    <body>
+        <h1> Lab 1 </h1>
+        <h3>Introduction to html</h3>
+        <hr>
+        <a href="https://www.w3schools.com/html" target="_blank"> A guide from W3Schools for html</a>
+        
+        <p>This is pretty cool</p>
+        <img src="https://sitechecker.pro/wp-content/uploads/2023/09/absolute-url-vs-relative-url.png" width="500" height="600">
+        <hr>
+        <h2>One Ring</h2>
+        <a href="ring.html" ><img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/One_Ring_Blender_Render.png" width="20" height="20"></a>
+        <h5>By JRR Tolkien</h5>
+        <pre style="background-color: black;font-family:verdana;">
+            <span style="color: gold;">Three Rings for the Elven-kings under the sky, </span>
+            <span style="color: orange;">Seven for the dwarf-lords in their halls of stone,</span>
+            <span style="color: gold">Nine for Mortal Men doomed to die,</span>
+            <span style="color: orange;">One for the Dark Lord on his dark throne,</span>
+            <span style="color: gold;">In the Land of Mordor where the Shadows lie.</span>
+            <span style="color: orange;">One Ring to rule them all, One Ring to find them,</span>
+            <span style="color: gold;">One Ring to bring them all and in the darkness bind them</span>
+            <span style="color: orange;">In the Land of Mordor where the Shadows lie.</pre>
+            <hr>
+            <p>A quote from one reader:</p>
+            <blockquote cite="https://www.reddit.com/r/lotr/comments/nwqwwq/the_ring_poem_a_serious_critique/">
+                <i><mark>Nine for mortal men doomed to die</mark></i>
+                <p></p>
+
+                <q>And this is it, my favourite line. firstly, it gets across the one thing that the elves think about humans, that they are mortal, doomed to die, this is also the reason for that "under the sky" line, to set up for this.</q>
+            </blockquote>
+            <hr>
+            <p>My Address</p>
+            <address>
+                Visit the website at:<br>
+                thebestwebsiteintheworld.com<br>
+                10 Altea Rise<br>
+                Secret Harbour<br>
+                Western Australia<br>
+                6173<br>
+            </address>
+            <hr>
+            <!-- This is going alright so far!!!!!-->
+             <h1><b>Lord of the Rings Characters</b></h1>
+             <table>
+                <tr>
+                <th>Name</th>
+                <th>Image</th>
+                <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Legolas</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Legolas600ppx.jpg/220px-Legolas600ppx.jpg" width="100" height="100"></td>
+                    <td>2,931</td>
+                </tr>
+                <tr>
+                    <td>Gimli</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQnxpcCLxpNwWgsxpzMdYSBtMeTo-iLJqVg&s" width="100" height="100"></td>
+                    <td>52</td>
+                </tr>
+                <tr>
+                    <td>Aragorn</td>
+                    <td><img src="https://static.wikia.nocookie.net/lotr/images/4/43/Aragorn3.jpg/revision/latest?cb=20080318215744" width="100" height="100"></td>
+                    <td>210</td>
+                </tr>
+                <tr>
+                    <td>Gandalf</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufGxG_Oe1LN3LIGFB8VK0eu2M3KHfHxzhcw&s" width="100" height="100"></td>
+                    <td>24,000</td>
+                </tr>
+             </table>
+             <hr>
+             <h1>My favourite books</h1>
+             <ul>
+                <li>Harry Potter</li>
+                <li>Wheel of Time</li>
+                <li>Eragon</li>
+                <li>Lord of the Rings</li>
+             </ul>
+             <hr>
+             <h2>Contact Form</h2>
+    
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+
+
+    </body>
+</html>
